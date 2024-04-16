@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/dashboardtest.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div> 
+            <img src="./assets/images/sayber logo.png">
+        </div>
+        <h2>User Dashboard</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Income</a>
+        <a href="#">Expenses</a>
+    </div>
+
+    <div id="content">
+        <h1>Welcome back, User!</h1>
+        <p>
+            This is your Dashboard where you can manage your spending, budgets and much more.
+        </p>
+
+        <!-- Income Container -->
+        <div class="income-container">
+            <div class="income-column">
+                <h4>Income</h4>
+                <div class="income-row">
+                    <span class="income">Income</span>
+                    <input type="text" placeholder="$0" class="money-input">
+                </div>
+                <div class="total-income-container">
+                    <span class="total-income">Total Income</span>
+                    <input type="text" placeholder="$0" class="money-input">
+                </div>
+            </div>
+            <div class="budget-column">
+                Budget
+            </div>
+            <div class="actual-column">
+                Actual
+            </div>
+            <div class="remaining-column">
+                Remaining
+            </div>
+        </div>
+
+        <!-- Bills Section -->
+        <div class="expense-container">
+            <div class="bills-toggle">
+                <button class="toggle-button" data-target="bills">+</button>
+            </div>
+            <div class="bills-form" id="bills">
+                <form>
+                    Bills:<br>
+                    <div class="subcategories" style="display: none;">
+                        <input type="checkbox" name="Rent" value="reading" tabindex="1" />Rent <input type="text" placeholder="$0"> <input type="text" placeholder="$0">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Needs Section -->
+        <div class="expense-container">
+            <div class="needs-toggle">
+                <button class="toggle-button" data-target="needs">+</button>
+            </div>
+            <div class="needs-form" id="needs">
+                <form>
+                    Needs:<br>
+                    <div class="subcategories" style="display: none;">
+                        <input type="checkbox" name="Groceries" value="reading" tabindex="1" />Groceries <input type="text" placeholder="$0">
+                        <input type="checkbox" name="Utilities" value="reading" tabindex="2" />Utilities <input type="text" placeholder="$0">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Wants Section -->
+        <div class="expense-container">
+            <div class="wants-toggle">
+                <button class="toggle-button" data-target="wants">+</button>
+            </div>
+            <div class="wants-form" id="wants">
+                <form>
+                    Wants:<br>
+                    <div class="subcategories" style="display: none;">
+                        <input type="checkbox" name="Entertainment" value="reading" tabindex="1" />Entertainment <input type="text" placeholder="$0">
+                        <input type="checkbox" name="Travel" value="reading" tabindex="2" />Travel <input type="text" placeholder="$0">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/main.js/script.js"></script>
+</body>
+</html>
