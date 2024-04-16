@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#sidebar {
+    background-color: #23ce6b; /* Emerald color */
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+    height: 100vh;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #fff;
+}
+
+/* Navigation Links */
+a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Income and Expense Containers */
+.income-container, .expense-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.income-column, .budget-column, .actual-column, .remaining-column {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.income-row, .total-income-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin: 5px;
+    width: 80px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
