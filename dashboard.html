@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
 </head>
 
 <body>
@@ -32,6 +32,15 @@
       <div class="income-container">
         <div class="income-column">
           <h4>Income</h4>
+          <div class="income-row">
+            <span class="income">Income</span>
+            <input type="text" placeholder="$0" class="money-input">
+        </div>
+        <div class="total-income-container">
+            <span class="total-income">Total Income</span>
+            <input type="text" placeholder="$0" class="money-input">
+        </div>
+
         </div>
 
         <div class="budget-column">Budget</div>
@@ -47,39 +56,73 @@
           <span class="total-income">Total Income</span></div>
       </div>
 
+<!--Bills Section-->
     <div class="expense-container">
-      <div class="bills-form">
+      <div class="bills-toggle">
+        <button id="toggleSubcategories">
+            <span id="toggleIcon">+</span>
+        </button>
+    </div>
+
+      <div class="bills-form" id="catergories">
         <form>
           Bills:<br>
-        <input type="checkbox" name="Rent" value=
-        "reading" tabindex="1" />Rent <input type="text" placeholder="$0"> <input type="text" placeholder="$0"> <input type="text" placeholder="$0"> <br />
-        <input type="checkbox" name="Utilities" value=
-        "reading" tabindex="2" />Utilities <input type="text" placeholder="$0"> <input type="text" placeholder="$0"> <input type="text" placeholder="$0"> <br />
+            <input type="checkbox" name="Rent" value="reading" tabindex="1" />Rent 
+            <input type="text" placeholder="$0"> 
+            <input type="text" placeholder="$0"> 
+            <input type="text" placeholder="$0"> 
+            <br />
+              <input type="checkbox" name="Utilities" value="reading" tabindex="2" />Utilities 
+              <input type="text" placeholder="$0"> 
+              <input type="text" placeholder="$0"> 
+              <input type="text" placeholder="$0"> 
+        <br />
+      </div>
         </form>
       </div>
-      <p>add new bill</p>
+
+      <p></p>
+
       <div class="formGroup">
-        <label for="">Bills</label>
+        <label for="Bills"></label>
         <input
         type="text"
         id="newBillInput"
         placeholder="Add New Bill" />
       </div>
+
 <p></p>
-      <div class="needs-form">
+
+<!--needs-->
+<div class="expense-container">
+  <div class="needs-toggle">
+      <button id="toggleSubcategories">
+          <span id="toggleIcon">+</span>
+          </button>
+  </div>
+      <div class="needs-form" id="categories">
         <form>
           Needs:<br>
           <input type="checkbox" name="Groceries" value=
-        "reading" tabindex="1" />Groceries <input type="text" placeholder="$0"> <input type="text" placeholder="$0"> <input type="text" placeholder="$0"> <br />
+        "reading" tabindex="1" />Groceries 
+        <input type="text" placeholder="$0"> 
+        <input type="text" placeholder="$0"> 
+        <input type="text" placeholder="$0"> 
+        <br />
         <input type="checkbox" name="Gas" value=
-        "reading" tabindex="2" />Gas <input type="text" placeholder="$0"> <input type="text" placeholder="$0"> <input type="text" placeholder="$0"> <br />
+        "reading" tabindex="2" />Gas 
+        <input type="text" placeholder="$0"> 
+        <input type="text" placeholder="$0"> 
+        <input type="text" placeholder="$0"> 
+        <br />
         </form>
+        </div>
       </div>
 
-      <p>add new need</p>
+      <p></p>
 
       <div class="formGroup">
-        <label for="">Needs</label>
+        <label for="needs"></label>
         <input
         type="text"
         id="newNeedInput"
@@ -88,20 +131,36 @@
 
       <p></p>
 
+<!--wants-->
+<div class="expense-container">
+  <div class="wants-toggle">
+      <button id="toggleSubcategories">
+          <span id="toggleIcon">+</span>
+          </button>
+  </div>
+
       <div class="wants-form">
         <form>
           Wants:<br>
           <input type="checkbox" name="Entertainment" value=
-        "reading" tabindex="1" />Entertainment <input type="text" placeholder="$0"> <input type="text" placeholder="$0"> <input type="text" placeholder="$0"> <br />
+        "reading" tabindex="1" />Entertainment 
+        <input type="text" placeholder="$0"> 
+        <input type="text" placeholder="$0"> 
+        <input type="text" placeholder="$0"> 
+        <br/>
         <input type="checkbox" name="Travel" value=
-        "reading" tabindex="2" />Travel <input type="text" placeholder="$0"> <input type="text" placeholder="$0"> <input type="text" placeholder="$0"> <br />
+        "reading" tabindex="2" />Travel 
+        <input type="text" placeholder="$0"> 
+        <input type="text" placeholder="$0"> 
+        <input type="text" placeholder="$0"> 
+        <br />
         </form>
       </div>
 
-      <p>add new want</p>
+      <p></p>
       
       <div class="formGroup">
-        <label for="">Wants</label>
+        <label for="wants"></label>
         <input
         type="text"
         id="newWantInput"
@@ -109,3 +168,4 @@
       </div>
 </div>
 </body>
+</html>

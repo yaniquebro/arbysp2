@@ -6,6 +6,7 @@ body {
     display: flex;
 }
 
+
 #sidebar {
     background-color: #23ce6b; /* Emerald color */
     color: #fff;
@@ -14,20 +15,24 @@ body {
     height: 100vh;
 }
 
+
 #content {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
+
 /* Header Styles */
 h1 {
     color: #333;
 }
 
+
 h2 {
     color: #fff;
 }
+
 
 /* Navigation Links */
 a {
@@ -37,9 +42,11 @@ a {
     margin-bottom: 10px;
 }
 
+
 a:hover {
     text-decoration: underline;
 }
+
 
 /* Income and Expense Containers */
 .income-container, .expense-container {
@@ -48,11 +55,13 @@ a:hover {
     margin-top: 20px;
 }
 
+
 .income-column, .budget-column, .actual-column, .remaining-column {
     flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
 }
+
 
 .income-row, .total-income-container {
     display: flex;
@@ -62,10 +71,12 @@ a:hover {
     flex: 1;
 }
 
+
 /* Form Styles */
 form {
     margin-bottom: 10px;
 }
+
 
 input[type="text"] {
     padding: 5px;
@@ -73,7 +84,7 @@ input[type="text"] {
     width: 80px;
 }
 
+
 input[type="checkbox"] {
     margin-right: 5px;
 }
-
