@@ -1,8 +1,8 @@
 // Get all toggle buttons
-const toggleButtons = document.querySelectorAll('.toggle-button');
+ const toggleButtons = document.querySelectorAll('.toggle-button');
 
 // Add click event listener to each toggle button
-toggleButtons.forEach(button => {
+ toggleButtons.forEach(button => {
     button.addEventListener('click', function() {
         const targetId = this.getAttribute('data-target');
         const target = document.getElementById(targetId);
@@ -15,6 +15,9 @@ toggleButtons.forEach(button => {
             subcategories.style.display = 'none';
             this.textContent = '+';
         }
-    });
+ });
 });
 
+import BudgetTracker from "./BudgetTracker.js";
+
+new BudgetTracker("#container");
