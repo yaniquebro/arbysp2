@@ -25,77 +25,106 @@
             This is your Dashboard where you can manage your spending, budgets and much more.
         </p>
 
-        <!-- Income Container -->
         <div class="income-container">
             <div class="income-column">
                 <h4>Income</h4>
                 <div class="income-row">
-                    <span class="income">Income</span>
-                    <input type="text" placeholder="$0" class="money-input">
-                </div>
-                <div class="total-income-container">
-                    <span class="total-income">Total Income</span>
+                    <span class="income">Total current cash</span>
                     <input type="text" placeholder="$0" class="money-input">
                 </div>
             </div>
             <div class="budget-column">
-                Budget
+                <h4>Budget</h4>
+                <div class="budget-row">
+                    <span class="budget">Budget</span>
+                    <input type="text" placeholder="$0" class="money-input">
+                </div>
             </div>
             <div class="actual-column">
-                Actual
+                <h4>Actual</h4>
+                <div class="actual-row">
+                    <span class="actual">Actual</span>
+                    <input type="text" placeholder="$0" class="money-input">
+                </div>
             </div>
             <div class="remaining-column">
-                Remaining
+                <h4>Remaining</h4>
+                <div class="remaining-row">
+                    <span class="remaining">Remaining</span>
+                    <input type="text" placeholder="$0" class="money-input">
+                </div>
             </div>
         </div>
-
-        <!-- Bills Section -->
-        <div class="expense-container">
-            <div class="bills-toggle">
-                <button class="toggle-button" data-target="bills">+</button>
-            </div>
-            <div class="bills-form" id="bills">
-                <form>
-                    Bills:<br>
-                    <div class="subcategories" style="display: none;">
-                        <input type="checkbox" name="Rent" value="reading" tabindex="1" />Rent <input type="text" placeholder="$0"> <input type="text" placeholder="$0">
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!-- Needs Section -->
-        <div class="expense-container">
-            <div class="needs-toggle">
-                <button class="toggle-button" data-target="needs">+</button>
-            </div>
-            <div class="needs-form" id="needs">
-                <form>
-                    Needs:<br>
-                    <div class="subcategories" style="display: none;">
-                        <input type="checkbox" name="Groceries" value="reading" tabindex="1" />Groceries <input type="text" placeholder="$0">
-                        <input type="checkbox" name="Utilities" value="reading" tabindex="2" />Utilities <input type="text" placeholder="$0">
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!-- Wants Section -->
-        <div class="expense-container">
-            <div class="wants-toggle">
-                <button class="toggle-button" data-target="wants">+</button>
-            </div>
-            <div class="wants-form" id="wants">
-                <form>
-                    Wants:<br>
-                    <div class="subcategories" style="display: none;">
-                        <input type="checkbox" name="Entertainment" value="reading" tabindex="1" />Entertainment <input type="text" placeholder="$0">
-                        <input type="checkbox" name="Travel" value="reading" tabindex="2" />Travel <input type="text" placeholder="$0">
-                    </div>
-                </form>
-            </div>
-        </div>
+<!-- Bills Section -->
+<div class="expense-container">
+    <div class="bills-toggle">
+        <button class="toggle-button" data-target="bills">+</button>
     </div>
+    <div class="bills-form" id="bills">
+        <form>
+            Bills:<br>
+            <div class="subcategories" style="display: none;">
+                <div class="subcategory">
+                    <input type="checkbox" name="Rent" value="reading" tabindex="1" />Rent <br>
+                    <span>Budget: <input type="text" placeholder="$0" class="money-input"></span>
+                    <span>Actual: <input type="text" placeholder="$0" class="money-input"></span>
+                    <span>Remaining: <input type="text" placeholder="$0" class="money-input"></span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Needs Section -->
+<div class="expense-container">
+    <div class="needs-toggle">
+        <button class="toggle-button" data-target="needs">+</button>
+    </div>
+    <div class="needs-form" id="needs">
+        <form>
+            Needs:<br>
+            <div class="subcategories" style="display: none;">
+                <div class="subcategory">
+                    <input type="checkbox" name="Groceries" value="reading" tabindex="1" />Groceries <br>
+                    <span>Budget: <input type="text" placeholder="$0" class="money-input"></span>
+                    <span>Actual: <input type="text" placeholder="$0" class="money-input"></span>
+                    <span>Remaining: <input type="text" placeholder="$0" class="money-input"></span>
+                </div>
+                <div class="subcategory">
+                    <input type="checkbox" name="Utilities" value="reading" tabindex="2" />Utilities <br>
+                    <span>Budget: <input type="text" placeholder="$0" class="money-input"></span>
+                    <span>Actual: <input type="text" placeholder="$0" class="money-input"></span>
+                    <span>Remaining: <input type="text" placeholder="$0" class="money-input"></span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Wants Section -->
+<div class="expense-container">
+    <div class="wants-toggle">
+        <button class="toggle-button" data-target="wants">+</button>
+    </div>
+    <div class="wants-form" id="wants">
+        <form>
+            Wants:<br>
+            <div class="subcategories" style="display: none;">
+                <div class="subcategory">
+                    <input type="checkbox" name="Entertainment" value="reading" tabindex="1" />Entertainment <br>
+                    <span>Budget: <input type="text" placeholder="$0" class="money-input"></span>
+                    <span>Actual: <input type="text" placeholder="$0" class="money-input"></span>
+                    <span>Remaining: <input type="text" placeholder="$0" class="money-input"></span>
+                </div>
+                <div class="subcategory">
+                    <input type="checkbox" name="Travel" value="reading" tabindex="2" />Travel <br>
+                    <span>Budget: <input type="text" placeholder="$0" class="money-input"></span>
+                    <span>Actual: <input type="text" placeholder="$0" class="money-input"></span>
+                    <span>Remaining: <input type="text" placeholder="$0" class="money-input"></span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 
     <script src="./assets/main.js/script.js"></script>
 </body>
