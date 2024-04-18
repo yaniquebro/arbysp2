@@ -4,49 +4,62 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    background-color: #2c3531; /* Gunmetal color */
+    color: #fff; /* White text color */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
 
-
 #sidebar {
-    background-color: #23ce6b; /* Emerald color */
-    color: #fff;
+    background-color: #fff; /* White background color to match image background */
+    color: #000; /* Black text color */
     padding: 20px;
     width: 200px;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
 
+#sidebar img {
+    max-width: 100%;
+    align-self: flex-start; /* Position the image at the top of the sidebar */
+}
 
 #content {
     flex: 1;
     display: flex;
     flex-direction: column;
+    color: #ccc;
 }
-
 
 /* Header Styles */
-h1 {
-    color: #333;
+h1, h2 {
+    margin: 10px 0; /* Add margin around the header */
 }
 
+h1 {
+    color: #ccc;
+    transition: color 0.3s ease; /* Smooth transition for text color change */
+}
 
 h2 {
-    color: #fff;
+    color: #000; /* Black text color for white background*/
+    transition: color 0.3s ease; /* Smooth transition for text color change */
 }
-
 
 /* Navigation Links */
 a {
-    color: #fff;
+    color: #2c3531;
     text-decoration: none;
     display: block;
     margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth transition for text color change */
 }
-
 
 a:hover {
     text-decoration: underline;
 }
-
 
 /* Income and Expense Containers */
 .income-container, .expense-container {
@@ -55,13 +68,13 @@ a:hover {
     margin-top: 20px;
 }
 
-
 .income-column, .budget-column, .actual-column, .remaining-column {
     flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 10px; /* Add border radius for rounded corners */
 }
-
 
 .income-row, .total-income-container {
     display: flex;
@@ -69,14 +82,15 @@ a:hover {
     padding: 10px;
     border: 1px solid #ccc;
     flex: 1;
+    margin: 10px;
+    border-radius: 10px; /* Add border radius for rounded corners */
 }
-
 
 /* Form Styles */
 form {
     margin-bottom: 10px;
+    opacity: 1; /* Ensure the form is visible */
 }
-
 
 input[type="text"] {
     padding: 5px;
@@ -84,7 +98,46 @@ input[type="text"] {
     width: 80px;
 }
 
-
 input[type="checkbox"] {
     margin-right: 5px;
+}
+
+/* Navigation Links */
+a {
+    color: #2c3531;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth transition for text color change */
+    padding: 5px 10px; /* Add padding to fill up the links */
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #f0f0f0; /* Light up the link when hovered */
+}
+
+/* Specific styling for Dashboard, Income, and Expenses links */
+a[href="#dashboard"]:hover {
+    background-color: #ffcc00; /* Light up the corresponding part for Dashboard */
+}
+
+a[href="#income"]:hover {
+    background-color: #66ff99; /* Light up the corresponding part for Income */
+}
+
+a[href="#expenses"]:hover {
+    background-color: #ff6666; /* Light up the corresponding part for Expenses */
+}
+
+
+/* Center the text elements */
+.welcome-message {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 20px; /* Add margin to center vertically */
+}
+
+.user-info {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 10px; /* Add margin to center vertically */
 }

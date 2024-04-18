@@ -9,7 +9,7 @@ body {
 }
 
 #sidebar {
-    background-color: #fff; /* White background color */
+    background-color: #23ce6b; /* White background color */
     color: #000; /* Black text color */
     padding: 20px;
     width: 200px;
@@ -27,6 +27,7 @@ body {
 #content {
     flex: 1;
     display: flex;
+    padding: 30px;
     flex-direction: column;
     color: #ccc;
 }
@@ -52,43 +53,68 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Income and Expense Containers */
-.income-container,
-.expense-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
+#container {
+padding: 30px;
+
 }
 
-.income-column,
-.budget-column,
-.actual-column,
-.remaining-column {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
+.budget-tracker {
+    border-collapse: collapse;
+    min-width: 750px;
+
 }
 
-.income-row,
-.total-income-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border: 1px solid #ccc;
-    flex: 1;
+.budget-tracker * {
+    font-family: sans-serif;
 }
 
-/* Form Styles */
-form {
-    margin-bottom: 10px;
+.budget-tracker th {
+    text-align: left;
+    padding: 10px 20px;
+    border-bottom: 2px solid #A846A0 ;
 }
 
-input[type="text"] {
+.budget-tracker td {
     padding: 5px;
-    margin: 5px;
-    width: 80px;
 }
 
-input[type="checkbox"] {
-    margin-right: 5px;
+.input,
+.delete-entry {
+    height: 30px;
+    font-size: 13px;
+    padding: o 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.input {
+    border: 1px solid;
+    border-radius: 5px;
+    outline: none ;
+}
+
+.input focus {
+    border-color: #adacad;
+}
+
+.delete-entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    background: none;
+    color: #A846A0;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.delete-entry hover {
+   background: rgb(255, 0, 0);
+}
+
+.controls,
+.summary {
+    text-align: right;
 }
