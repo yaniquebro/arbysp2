@@ -1,0 +1,36 @@
+## SABYR
+LIVE CALCULATING BUDGET APP
+
+## COLABORATORS
+
+    * Yanique Brooks| Slack name: Yanique Brooks| Github : yaniquebro
+    * Samuel Leite | Slack name: Samuel Leite | Github : s15585383
+    * Rachel Clarke | Slack name: Rachel Clarke | Github :clarkera
+    * Brittany James | Slack name: Brittany James | Github : BrittShakier
+    * Alicia Bromfield | Slack name: Alicia Bromfield | Github : lici876 
+
+## USER STORY
+```
+AS A group project
+We created a simple website to compare monthly personal expenses
+SO THAT the user can then compare what they were wishing to spend with what they actually spent at the end of a period
+```
+## ACCEPTANCE CRITERIA
+
+```
+GIVEN a webpage that displays different expense categories
+WHEN I open the site
+THEN I see the landing page
+WHEN I am in the landing page, I see a welcome banner, a square with a general description of the app and its purpose
+THEN I see view at the bottom a stylized buttom that says "sign up" and under it log in"
+WHEN I click Start sign up, it takes me to a sign up page
+THEN I navigate the sign up page, it displays a box for name, email, password and retype password
+WHEN I click the signup, it takes me to the dashboard
+THEN I see all the elements, sidebar, welcome message at top, row for income calculation and a bills, needs, wants rows with subcategories
+WHEN I click on add category
+THEN it gives me an option to create a new subcategory
+WHEN I input values into the boxes
+THEN It adds the value into the main income row
+WHEN I look at the bottom of the page
+THEN I see the operating stock market API
+```
