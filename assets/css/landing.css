@@ -6,7 +6,7 @@ body {
     color: #fff;
 }
 
-.logo {
+.logo-container {
     text-align: center;
     margin-top: 20px;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 .card-header button {
-    background-color: #007bff;
+    background-color: #666;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -41,7 +41,7 @@ body {
 }
 
 .card-header button:hover {
-    background-color: #0056b3;
+    background-color: #A846a0;
 }
 
 .card-footer {
@@ -50,13 +50,13 @@ body {
 }
 
 .card-footer img {
-    max-width: 100%;
+    size: 200px;
     height: auto;
     margin-top: 20px;
 }
 
 .card-footer h2 {
-    color: #333;
+    color: #e5e0dc;
 }
 
 .card-footer h3 {
