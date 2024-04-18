@@ -3,7 +3,7 @@ export default class BudgetTracker {
         this.root = document.querySelector(querySelectorString);
         this.root.innerHTML = BudgetTracker.html();
 
-        this.root.querySelector(".new-entry") .addEventListener("click", () => {
+        this.root.querySelector(".new-entry").addEventListener("click", () => {
             this.onNewEntryBtnClick()
         });
 
@@ -14,29 +14,30 @@ export default class BudgetTracker {
     static html() {
         return `
             <table class="budget-tracker">
-                    <thead>
-                        <th>Date</th>
-                        <th>Category</th>
-                        <th>Type</th>
-                        <th>Amount</th>
-                    </thead>
-                    <tbody class="entries"></tbody>
-                    <tbody>
-                        <tr>
-                            <td colspan="5">
-                                <button type="button" class="new-entry">New Entry</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="5" class="final">
-                                <strong>TOTAL:</strong>
-                                <span class="total">$0.00</span>
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
+            <thead>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th></th>
+            </thead>
+            <tbody class="entries"></tbody>
+            <tbody class="controls">
+                <tr>
+                    <td colspan="5">
+                        <button type="button" class="controls">New Entry</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot class="summary">
+                <tr>
+                    <td colspan="5">
+                        <strong>TOTAL:</strong>
+                        <span class="total">$0.00</span>
+                    </td>
+                </tr>
+            </tfoot>
+            </table>
         `;
     }
 

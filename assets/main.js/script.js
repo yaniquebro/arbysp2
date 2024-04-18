@@ -1,3 +1,7 @@
+import BudgetTracker from "./BudgetTracker.js";
+
+new BudgetTracker("#container");
+
 // Get all toggle buttons
  const toggleButtons = document.querySelectorAll('.toggle-button');
 
@@ -17,7 +21,3 @@
         }
  });
 });
-
-import BudgetTracker from "./BudgetTracker.js";
-
-new BudgetTracker("#container");

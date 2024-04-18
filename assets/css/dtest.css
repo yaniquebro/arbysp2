@@ -9,7 +9,7 @@ body {
 }
 
 #sidebar {
-    background-color: #fff; /* White background color */
+    background-color: #23ce6b; /* White background color */
     color: #000; /* Black text color */
     padding: 20px;
     width: 200px;
@@ -27,6 +27,7 @@ body {
 #content {
     flex: 1;
     display: flex;
+    padding: 30px;
     flex-direction: column;
     color: #ccc;
 }
@@ -50,6 +51,17 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+#container {
+padding: 30px;
+
+}
+
+.budget-tracker {
+    border-collapse: collapse;
+    min-width: 750px;
+
 }
 
 .budget-tracker * {
@@ -99,10 +111,10 @@ a:hover {
 }
 
 .delete-entry hover {
-   background: rgb(168, 70, 160, 0.1);
+   background: rgb(255, 0, 0);
 }
 
-.new-entry,
-.final {
+.controls,
+.summary {
     text-align: right;
 }
