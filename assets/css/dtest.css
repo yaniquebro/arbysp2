@@ -51,6 +51,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color: #A846A0;
 }
 
 #container {
@@ -117,4 +118,10 @@ padding: 30px;
 .controls,
 .summary {
     text-align: right;
+}
+
+.api {
+    border:2px solid #A846A0;
+    height: 162px;
+
 }
