@@ -62,11 +62,13 @@ padding: 30px;
 .budget-tracker {
     border-collapse: collapse;
     min-width: 750px;
+    
 
 }
 
 .budget-tracker * {
     font-family: sans-serif;
+
 }
 
 .budget-tracker th {
@@ -76,7 +78,7 @@ padding: 30px;
 }
 
 .budget-tracker td {
-    padding: 5px;
+    padding: 10px;
 }
 
 .input,
